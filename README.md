@@ -2,6 +2,7 @@
 
 Fast React Pizza Co. is a **demo learning project** designed to practice React fundamentals, component architecture, state management, routing, and API integration. The app simulates a pizza ordering process from browsing a menu to placing a mock order, complete with features like a cart system, priority orders, and order tracking. This project focuses on applying core React concepts and modern development tools while keeping the environment safe and payment-free.
 
+
 # 🌟 Key Features
 
 - **Dynamic Pizza Menu** — Menu items fetched from a mock API or static data.
@@ -22,6 +23,7 @@ Fast React Pizza Co. is a **demo learning project** designed to practice React f
 
 - **Real-time Pricing** - Live calculation of order totals.
 
+
 # 🛠️ Tech Stack
 
 - **React 18:** Latest React with concurrent features
@@ -40,57 +42,61 @@ Fast React Pizza Co. is a **demo learning project** designed to practice React f
 
 - **Mock API / Static Data** — Data source
 
-# 📁 Project Structure
+  
 
+# 📁 Project Structure
+```
 src/
 ├── features/
 │ ├── cart/
-│ │ ├── Cart.jsx # Cart page displaying all selected items
-│ │ ├── CartItem.jsx # Single pizza item in cart
-│ │ ├── CartOverview.jsx # Cart summary (item count, total price)
-│ │ ├── cartSlice.js # Redux slice for cart state/actions
-│ │ ├── DeleteItem.jsx # Remove an item from the cart
-│ │ ├── EmptyCart.jsx # UI when cart is empty
-│ │ └── UpdateItemQuantity.jsx # Change pizza quantity in cart
+│ │ ├── Cart.jsx                        # Cart page displaying all selected items
+│ │ ├── CartItem.jsx                    # Single pizza item in cart
+│ │ ├── CartOverview.jsx                # Cart summary (item count, total price)
+│ │ ├── cartSlice.js                    # Redux slice for cart state/actions
+│ │ ├── DeleteItem.jsx                  # Remove an item from the cart
+│ │ ├── EmptyCart.jsx                   # UI when cart is empty
+│ │ └── UpdateItemQuantity.jsx          # Change pizza quantity in cart
 │ ├── menu/
-│ │ ├── Menu.jsx # Full list of available pizzas
-│ │ └── MenuItem.jsx # Single pizza details in the menu
+│ │ ├── Menu.jsx                        # Full list of available pizzas
+│ │ └── MenuItem.jsx                    # Single pizza details in the menu
 │ ├── order/
-│ │ ├── CreateOrder.jsx # Order form with user info & priority option
-│ │ ├── Order.jsx # Specific order details page
-│ │ ├── OrderItem.jsx # Single pizza in an order
-│ │ ├── SearchOrder.jsx # Search orders by ID
-│ │ └── UpdateOrder.jsx # Update order details/status
+│ │ ├── CreateOrder.jsx                 # Order form with user info & priority option
+│ │ ├── Order.jsx                       # Specific order details page
+│ │ ├── OrderItem.jsx                   # Single pizza in an order
+│ │ ├── SearchOrder.jsx                 # Search orders by ID
+│ │ └── UpdateOrder.jsx                 # Update order details/status
 │ └── user/
-│ ├── CreateUser.jsx # Create/register a temporary user profile
-│ └── userSlice.js # Redux slice for user state
+│ ├── CreateUser.jsx                    # Create/register a temporary user profile
+│ └── userSlice.js                      # Redux slice for user state
 ├── services/
-│ ├── apiGeocoding.js # Convert addresses to GPS coordinates
-│ └── apiRestaurant.js # Fetch menu/order/restaurant data
+│ ├── apiGeocoding.js                   # Convert addresses to GPS coordinates
+│ └── apiRestaurant.js                  # Fetch menu/order/restaurant data
 ├── ui/
-│ ├── AppLayout.jsx # Root layout with shared components
-│ ├── Button.jsx # Reusable button
-│ ├── Error.jsx # Error display component
-│ ├── Header.jsx # App header/navigation
-│ ├── Home.jsx # Landing page
-│ ├── LinkButton.jsx # Styled navigation link
-│ ├── Loader.jsx # Loading spinner
-│ └── UserName.jsx # Displays current user name
+│ ├── AppLayout.jsx                     # Root layout with shared components
+│ ├── Button.jsx                        # Reusable button
+│ ├── Error.jsx                         # Error display component
+│ ├── Header.jsx                        # App header/navigation
+│ ├── Home.jsx                          # Landing page
+│ ├── LinkButton.jsx                    # Styled navigation link
+│ ├── Loader.jsx                        # Loading spinner
+│ └── UserName.jsx                      # Displays current user name
 ├── utils/
-│ └── helpers.js # Utility/helper functions
-├── App.jsx # Main app component with routing
-├── index.css # Global styles & Tailwind imports
-├── main.jsx # App entry point
-└── store.js # Redux store configuration
+│ └── helpers.js                        # Utility/helper functions
+├── App.jsx                             # Main app component with routing
+├── index.css                           # Global styles & Tailwind imports
+├── main.jsx                            # App entry point
+└── store.js                            # Redux store configuration
+```
+
 
 # 🚀 Getting Started
 
-## Prerequisites
+### Prerequisites
 
 - Node.js (v14 or higher)
 - npm or yarn package manager
 
-## Installation
+### Installation
 
 **1. Clone the repository**
 
@@ -156,11 +162,13 @@ Navigate to `http://localhost:5173` to view the app.
 
 - Modify priority status if needed.
 
+
+  
 # 🎯 Learning Objective
 
 This project demonstrates several important modern React concepts:
 
-## React Router v6
+### React Router v6
 
 - Data Loading: Router-based data fetching with loaders.
 
@@ -170,7 +178,7 @@ This project demonstrates several important modern React concepts:
 
 - Error Boundaries: Route-level error handling.
 
-## State Management
+### State Management
 
 - Redux Toolkit: Modern Redux with RTK Query.
 
@@ -180,7 +188,7 @@ This project demonstrates several important modern React concepts:
 
 - State Normalization: Efficient data structure management.
 
-## Modern React Patterns
+### Modern React Patterns
 
 - Custom Hooks: Reusable logic extraction.
 
@@ -190,9 +198,11 @@ This project demonstrates several important modern React concepts:
 
 - Context API: Theme and global state management.
 
+  
+
 # 🤝 Contributions
 
-Contributions are welcome!
+Contributions are welcome! Please feel free to submit a Pull Request. For major changes, please open an issue first to discuss what you would like to change.
 
 1. Fork the repository.
 
@@ -208,7 +218,9 @@ Contributions are welcome!
    ```
 5. Open a Pull Request.
 
-## Acknowledgements
+   
+
+# 🙏 Acknowledgements
 
 - [React Docs](https://react.dev/) for core concepts.
 
